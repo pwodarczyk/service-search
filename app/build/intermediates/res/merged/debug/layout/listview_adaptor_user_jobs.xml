@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+
+    android:id="@+id/mainlayout"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content" >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#fff"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/layoutcalandreviews"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+
+        <com.bluehorntech.generalservicesapplication.CircularNetworkImageView
+            android:background="@drawable/usercopy"
+            android:id="@+id/imgprofile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="4dip" />
+
+        <TextView
+            android:id="@+id/tv_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgprofile"
+            android:textSize="15dp"
+            android:text="Name"
+            android:paddingRight="10dp"
+            android:textColor="#ff1e2503"
+            />
+
+        <TextView
+            android:id="@+id/tv_job_disription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgprofile"
+            android:layout_below="@+id/tv_client_name"
+            android:text="Category"
+            android:visibility="gone"
+            android:textColor="#a7080910" />
+
+
+        <TextView
+            android:id="@+id/tvEmpSelfDiscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inspect electrical systems, equipment, and components to identify hazards, defects, and the need for adjustment or repair, and to ensure compliance with codes. "
+            android:layout_toRightOf="@+id/imgprofile"
+            android:lines="3"
+            android:paddingRight="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_client_name"
+            android:textColor="#97000000" />
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/painter"
+            android:layout_below="@+id/imgprofile"
+            android:id="@+id/imagecat"
+            />
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/imagecat"
+            android:background="@drawable/plumber"
+            android:layout_below="@+id/imgprofile"
+            android:id="@+id/imagecat2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="pending"
+            android:id="@+id/tvjobstatus_for_user"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#B5B5B5"
+            android:layout_marginRight="5dp"
+           android:layout_alignParentRight="true"
+            android:background="@drawable/customshape_btnjobpanding"
+
+
+
+            />
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JOB CLOSE"
+            android:textSize="11dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgprofile"
+            android:background="@drawable/customshapestartjob"
+            android:id="@+id/tvjobstatusforuser"
+            android:layout_below="@+id/tvEmpSelfDiscription" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:textSize="11dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tvjobstatusforuser"
+            android:background="@drawable/customshapescancelbyuser"
+            android:id="@+id/tvjobCanceledbyUser"
+            android:layout_below="@+id/tvEmpSelfDiscription" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:id="@+id/layoutcalandreviews"
+        android:layout_alignParentRight="true"
+        android:layout_height="fill_parent"
+        android:background="#F7F7F7"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/relativeLayout">
+
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/btnCall"
+            android:background="@drawable/phonecall"
+            />
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/line"
+            android:background="@drawable/rating"
+            android:textColor="#97000000" />
+
+        <TextView
+            android:maxLength="4"
+            android:id="@+id/ratingtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.4"
+            android:textColor="#00A1D8"
+            android:layout_toRightOf="@+id/year"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/line"
+            />
+        <TextView
+            android:id="@+id/yearrrrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:textSize="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/year"
+            android:layout_below="@+id/ratingtext"
+            android:textColor="#97000000" />
+
+
+
+        <TextView
+            android:id="@+id/tvexperianceshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call me"
+            android:textColor="#00A1D8"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:layout_marginRight="-10dp"
+            android:layout_toRightOf="@+id/btnCall"
+            android:layout_marginLeft="4dp"
+            />
+        <TextView
+            android:id="@+id/callme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call me"
+            android:textColor="#00A1D8"
+            android:textSize="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="-10dp"
+            android:layout_toRightOf="@+id/btnCall"
+            android:layout_marginLeft="4dp"
+            />
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.05sp"
+            android:id="@+id/line"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/btnCall"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="#c0c0c0"/>
+
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.05sp"
+            android:id="@+id/line2"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/yearrrrrr"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+
+            android:layout_centerHorizontal="true"
+            android:background="#c0c0c0"/>
+
+
+        <RatingBar
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:id="@+id/ratingBar"
+          android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add comments"
+            android:visibility="gone"
+            android:id="@+id/tvAddComments" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/etcomments"
+        />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

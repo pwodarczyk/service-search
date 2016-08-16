@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="10dp"
+    android:paddingLeft="15dp"
+    android:paddingBottom="20dp"
+    android:background="#fff"
+    android:layout_height="fill_parent" >
+
+
+    <TextView
+        android:id="@+id/tv_show_client_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_job_disription"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:text="Client Name"
+        android:textColor="#ff1e2503" />
+
+
+
+    <TextView
+        android:id="@+id/tv_client_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/tv_show_client_name"
+        android:layout_marginTop="5dp"
+        android:text="Client Name"
+        android:textColor="#a1a1a1" />
+
+    <TextView
+        android:id="@+id/tv_job_disription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvshowjobdiscription"
+        android:text="Job Discrition"
+        android:layout_marginTop="5dp"
+        android:textColor="#a1a1a1" />
+
+
+    <TextView
+        android:id="@+id/tvEmpSelfDiscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience : "
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/tv_job_disription"
+        android:textColor="#97000000" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvexperianceshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eperience"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvEmpSelfDiscription"
+        android:layout_below="@+id/tv_job_disription"
+        android:textColor="#97000000" />
+
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Years"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tvexperianceshow"
+        android:layout_below="@+id/tv_job_disription"
+        android:textColor="#97000000" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/tvexperianceshow" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnCall"
+        android:background="@drawable/phonecall"
+        android:layout_below="@+id/tvEmpSelfDiscription"
+        android:visibility="gone"
+         />
+
+    <TextView
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOB CLOSE"
+        android:id="@+id/tvjobstatus"
+        android:paddingBottom="6dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="6dp"
+        android:textColor="#fff"
+        android:background="@drawable/customshajobdone"
+        android:layout_below="@+id/tv_get_client_phoneNumber"
+        android:layout_marginTop="15dp"
+
+       />
+
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:id="@+id/tvjobsCancel"
+        android:paddingBottom="6dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="6dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvjobstatus"
+        android:background="@drawable/customshapejobcancel"
+        android:layout_below="@+id/tv_get_client_phoneNumber"
+        android:layout_marginTop="15dp"
+        />
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Discription"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tvshowjobdiscription"
+      />
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pending"
+        android:id="@+id/tvjobsPandind"
+        android:paddingBottom="6dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="6dp"
+        android:textColor="#B5B5B5"
+        android:background="@drawable/customshapejobpanding"
+        android:layout_marginRight="20dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Address"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_show_clientAddress"
+        android:layout_below="@+id/tv_client_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clienrt Address"
+        android:layout_marginTop="5dp"
+        android:textColor="#a1a1a1"
+        android:id="@+id/tv_get_clientAddress"
+        android:layout_below="@+id/tv_show_clientAddress"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Phone Number"
+        android:textSize="15dp"
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_show_client_phoneNumber"
+        android:layout_below="@+id/tv_get_clientAddress"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Phone Number"
+        android:layout_marginTop="5dp"
+        android:textColor="#a1a1a1"
+        android:id="@+id/tv_get_client_phoneNumber"
+        android:layout_below="@+id/tv_show_client_phoneNumber"
+        />
+
+
+    <com.parse.ParseImageView
+        android:id="@+id/icon33"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dip"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:paddingTop="5dp"
+        android:layout_marginRight="7dip" />
+
+
+    <com.bluehorntech.generalservicesapplication.CircularNetworkImageView
+        android:id="@+id/imgprofile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dip"
+        android:paddingBottom="2dp"
+        android:layout_centerVertical="true"
+        android:paddingTop="2dp"
+        android:visibility="gone"
+        android:background="@drawable/border"
+        android:layout_marginRight="7dip" />
+
+
+
+</RelativeLayout>

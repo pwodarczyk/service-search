@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bgsignup"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ABOUT"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Classify is a complete Universal app template you can use to offer mobile classifieds service to professionals and end users,\n\n they will be able to post and edit ads all via their devices, no computer needed, additionally they can just search for what they need or browse listings by Categories and contact seller all in mobility! \n\n Classify is very easy to customize, it has a single Main.storyboard file and its code has been optimized for all iOS devices, native XCode project, pure Swift language, Android."
+        android:textColor="#fff"
+        android:id="@+id/textView7"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

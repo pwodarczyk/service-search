@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+
+            <ImageView
+                android:id="@+id/bgprofile"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/background"
+                android:scaleType="fitXY" />
+
+            <com.bluehorntech.generalservicesapplication.CircularNetworkImageView
+                android:id="@+id/imgprofile"
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="75dp"
+
+                android:scaleType="fitXY" />
+
+
+            <TextView
+                android:id="@+id/tvUpdateProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/bgprofile"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/imgprofile"
+                android:text="Edit profile picture"
+                android:textColor="#fff"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="112dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tvUpdateProfile"
+
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="-15dp"
+                android:background="#fff" />
+
+
+            <EditText
+                android:id="@+id/etsignupname"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/bgprofile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/tvmyname"
+                android:ems="10"
+                android:hint="Your name"
+                android:singleLine="true" />
+
+
+            <EditText
+                android:id="@+id/etsignupusername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etsignupname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvmyusername"
+                android:ems="10"
+                android:hint="Username"
+                android:singleLine="true"></EditText>
+
+
+            <TextView
+                android:id="@+id/tvpassworduser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Password:-"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etsignuppassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etsignupusername"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvmypassword"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:visibility="gone"></EditText>
+
+            <TextView
+                android:id="@+id/tvemailuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvpassworduser"
+                android:layout_below="@+id/tvpassworduser"
+                android:layout_marginTop="25dp"
+                android:text="Email:-"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etsignupemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etsignuppassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvmyemail"
+                android:ems="10"
+                android:hint="Email"
+                android:singleLine="true"></EditText>
+
+            <TextView
+                android:id="@+id/tvphoneuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvemailuser"
+                android:layout_below="@+id/tvemailuser"
+                android:layout_marginTop="25dp"
+                android:text="Phone:-"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etsignupphone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etsignupemail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvmyphone"
+                android:ems="10"
+                android:hint="Phone number"
+                android:singleLine="true"></EditText>
+
+            <TextView
+                android:id="@+id/tvaddressuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvphoneuser"
+                android:layout_below="@+id/tvphoneuser"
+                android:layout_marginTop="25dp"
+                android:text="Address:-"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvexperiancee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvphoneuser"
+                android:layout_below="@+id/tvrbselection"
+                android:layout_marginTop="25dp"
+                android:text="Experiance:-"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvrbselection"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etsignupaddress"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Select type"
+                android:textSize="15sp"
+                android:visibility="gone"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tvcatogry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvphoneuser"
+                android:layout_below="@+id/tvexperiancee"
+                android:layout_marginTop="25dp"
+                android:text="Categoty:-"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/etsignupaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etsignupphone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvmyphone"
+                android:ems="10"
+                android:hint="Address"
+                android:singleLine="true"></EditText>
+
+
+            <EditText
+                android:id="@+id/etexperiance"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/spinner_category"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvmyexperience"
+                android:ems="10"
+                android:hint="Experiane"
+                android:singleLine="true"></EditText>
+
+            <EditText
+                android:id="@+id/et_epm_discription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etexperiance"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvdescription"
+                android:ems="10"
+
+                android:hint="Discription"
+                android:singleLine="true">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvmyexperience"
+                android:layout_marginLeft="15dp"
+
+                android:layout_marginTop="20dp"
+                android:text="Desdcription"
+                android:textSize="15sp"
+
+                />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rbselection"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvmyselectcategory"
+                android:entries="@array/category"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/btngetImage"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/btnUpdateEmp"
+                android:layout_below="@+id/spinner_category"
+                android:text="Get Image"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/btnUpdateEmp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_epm_discription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customshape_btnupdatemainprofile"
+                android:onClick="Clicker"
+                android:text="UPDATE"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnUpdateEmp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customshape_btncancelmainprofile"
+                android:onClick="Clicker"
+                android:text="CANCEL"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/rbselection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etsignupaddress"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tvrbselection"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/rb_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:button="@drawable/button_radio_mainprofile"
+                    android:checked="true"
+                    android:paddingLeft="15dp"
+                    android:text="User"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:id="@+id/rb_employee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:button="@drawable/button_radio_mainprofile"
+                    android:checked="false"
+                    android:paddingLeft="15dp"
+                    android:text="Employee"
+                    android:textColor="#000" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tvmyname"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etsignupname"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toEndOf="@+id/tvpassworduser"
+                android:layout_toRightOf="@+id/tvpassworduser"
+                android:text="Name"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvmyusername"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etsignupemail"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Username"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/tvmypassword"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etsignupemail"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Password"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvmyemail"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etsignupphone"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Email"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/tvmyphone"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etsignupaddress"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Phone"
+                android:textSize="15dp" />
+
+
+            <TextView
+
+                android:id="@+id/tvmyaddress"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etsignupaddress"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Address"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/tvmyselectcategory"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/spinner_category"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="15dp"
+                android:text="Select category"
+                android:textSize="15sp"
+                android:visibility="gone"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tvmyexperience"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etexperiance"
+                android:layout_marginBottom="10dp"
+
+                android:layout_marginLeft="15dp"
+                android:text="Experience"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tvmyoverview"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/et_epm_discription"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Overview"
+                android:textSize="15sp"
+                android:visibility="gone"
+
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

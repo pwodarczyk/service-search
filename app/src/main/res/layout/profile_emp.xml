@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/background"
+        android:id="@+id/bgprofile" />
+    <com.bluehorntech.generalservicesapplication.CircularNetworkImageView
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="75dp"
+        android:id="@+id/imgprofile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="#00a1d8"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_emp_discripton"
+        android:layout_below="@+id/imgprofile"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discription Discription Discription Discription"
+        android:layout_marginLeft="20dp"
+        android:lines="5"
+        android:id="@+id/tv_discription_detailed"
+        android:layout_below="@+id/tv_emp_discripton"
+        android:layout_marginTop="7dp"
+   />
+
+
+    <Button
+    android:layout_width="fill_parent"
+    android:layout_height="65dp"
+    android:text="CALL"
+    android:id="@+id/btn_cal_to_emp"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:layout_centerHorizontal="true"
+    android:paddingLeft="90dp"
+    android:paddingRight="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/btn_start_job"
+    android:drawableLeft="@drawable/callicon"
+    android:background="@drawable/customshape_btncaltoemp"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="0.03" />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:text="START JOB"
+        android:id="@+id/btn_start_job"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/customshape_btnstartjobforemp"
+        android:textColor="#fff"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee name"
+        android:paddingLeft="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textColor="#fff"
+        android:id="@+id/tv_emp_name"
+        android:layout_alignTop="@+id/imgprofile"
+        android:layout_toRightOf="@+id/imgprofile"
+         />
+
+    <TextView
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience"
+        android:paddingLeft="10dp"
+        android:textColor="#fff"
+        android:layout_marginTop="-5dp"
+        android:textStyle="italic"
+        android:id="@+id/tv_emp_category"
+        android:layout_below="@+id/tv_emp_name"
+        android:layout_toRightOf="@+id/imgprofile"
+        />
+
+</RelativeLayout>

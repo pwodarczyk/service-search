@@ -1,0 +1,155 @@
+package com.example.classified_app;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.parse.LogInCallback;
+import com.parse.ParseException;
+import com.parse.ParseFile;
+import com.parse.ParseUser;
+import com.parse.SignUpCallback;
+
+public class SignUp extends Activity {
+
+	String nametxt;
+	String phonetxt;
+	String addresstxt;
+	String usernametxt;
+	String passwordtxt;
+	String emailtxt;
+	EditText password;
+	EditText username;
+	ParseFile photoFile;
+	EditText email;
+	EditText name;
+	EditText phone;
+	ImageButton imageButton;
+	EditText address;
+	Context context;
+//	Button btnGetImage;
+	int	REQUEST_IMAGE_CAPTURE = 100;
+	Button signup;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.signupuser);
+		signup=(Button)findViewById(R.id.btnsignupform);
+		username = (EditText) findViewById(R.id.etsignupusername);
+		password = (EditText) findViewById(R.id.etsignuppassword);
+		email = (EditText) findViewById(R.id.etsignupemail);
+	//	btnGetImage = (Button)findViewById(R.id.btngetImage);
+		name = (EditText) findViewById(R.id.etsignupname);
+		phone = (EditText) findViewById(R.id.etsignupphone);
+		address = (EditText) findViewById(R.id.etsignupaddress);
+		signup.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Toast.makeText(getApplicationContext(),
+						"signup button clicked.",
+						Toast.LENGTH_LONG).show();
+				clicker();
+			}
+		});
+	}
+//	public void Clicker(View v){
+//		switch (v.getId()){
+//			case R.id.btnsignupform:
+//				clicker();
+//				break;
+//		}
+//	}
+//
+	public void clicker(){
+
+		{
+			// Retrieve the text entered from the EditText
+			usernametxt = username.getText().toString();
+			passwordtxt = password.getText().toString();
+			emailtxt = email.getText().toString();
+			nametxt = name.getText().toString();
+			phonetxt = phone.getText().toString();
+			addresstxt = address.getText().toString();
+			String s=addresstxt;
+
+			Log.d("usernametxt", usernametxt);
+			Log.d("passwordtxt", passwordtxt);
+			Log.d("emailtxt", emailtxt);
+			Log.d("nametxt", nametxt);
+			Log.d("phonetxt", phonetxt);
+			Log.d("addresstxt", addresstxt);
+			// Force user to fill up the form
+			if (usernametxt.equals("") && passwordtxt.equals("") && emailtxt.equals("") && nametxt.equals("") && phonetxt.equals("") && addresstxt.equals("") ) {
+				Toast.makeText(getApplicationContext(),
+						"Please complete the sign up form",
+						Toast.LENGTH_LONG).show();
+
+			} else {
+
+				ParseUser usern = new ParseUser();
+			//	ParseObject user = new ParseObject("_User");
+
+				ParseUser.getCurrentUser().getObjectId();
+				usern.setEmail(emailtxt);
+				usern.setUsername(usernametxt);
+				usern.setPassword(passwordtxt);
+
+				usern.put("name", nametxt);
+				usern.put("phone", phonetxt);
+				usern.put("address", s);
+
+				usern.signUpInBackground(new SignUpCallback() {
+					public void done(ParseException e) {
+						if (e == null) {
+							Toast.makeText(getApplicationContext(),
+									"Successfully Signed up, please log in.",
+									Toast.LENGTH_LONG).show();
+							usernametxt = username.getText().toString();
+							passwordtxt = password.getText().toString();
+							ParseUser.logInInBackground(usernametxt, passwordtxt,
+									new LogInCallback() {
+										public void done(ParseUser user, ParseException e) {
+											if (user != null) {
+												// If user exist and authenticated, send user to Welcome.class
+												Intent intent = new Intent(
+														SignUp.this,
+														Profile.class);
+												Utils.savePreferences("logged", "logged", getApplicationContext());
+												// pass your values and retrieve them in the other Activity using keyName
+												startActivity(intent);
+												Toast.makeText(getApplicationContext(),
+														"Successfully Logged in",
+														Toast.LENGTH_LONG).show();
+												finish();
+											} else {
+												Toast.makeText(
+														getApplicationContext(),
+														"No such user exist, please signup",
+														Toast.LENGTH_LONG).show();
+											}
+										}
+									});
+//							Intent intent = new Intent(SignUp.this, MainActivity.class);
+//						//	intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+//							startActivity(intent);
+						} else {
+							Toast.makeText(getApplicationContext(),
+									"Sign up Error", Toast.LENGTH_LONG)
+									.show();
+						}
+					}
+				});
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">General Services Application</string>
+    <string name="action_settings">Change Password</string>
+    <string name="action_logOut">Log Out</string>
+    <string name="settings_distance_format">%d feet</string>
+    <string name="ranklabel">"Rank : "</string>
+    <string name="countrylabel">"Country : "</string>
+    <string name="populationlabel">"Population : "</string>
+    <string name="hint_for_address"><i>Type your address</i></string>
+    <string name="hint_for_dis"><i>What is the job?</i></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+
+        <item >Job Categories</item>
+        <item >My Jobs</item>
+        <item >Profile</item>
+        <item >About</item>
+        <item >Log out</item>
+        <item >Exit</item>
+    </string-array>
+
+
+
+    <string-array name="nav_drawer_items_emp">
+
+        <item >My Jobs</item>
+        <item >Profile</item>
+        <item >Log out</item>
+        <item >Exit</item>
+    </string-array>
+
+
+
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>

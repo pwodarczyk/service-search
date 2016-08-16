@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bgsignup"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLEASE SELECT A CATEGORY"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you can search for the required service by categories"
+        android:textSize="11dp"
+        android:layout_below="@+id/textView5"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvbreifdiscription" />
+
+    <Spinner
+        android:layout_width="match_parent"
+
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/spinnercat"
+        android:popupBackground="#ffffffff"
+        android:scrollbarStyle="insideOverlay"
+        android:layout_below="@+id/tvbreifdiscription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:spinnerMode="dropdown" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_below="@+id/spinnercat"
+        android:background="#fff" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="SEARCH"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnseachcategory"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_below="@+id/spinnercat"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="90dp"
+        android:paddingRight="70dp"
+        android:drawableLeft="@drawable/searchicon"
+        android:background="@drawable/customshape"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

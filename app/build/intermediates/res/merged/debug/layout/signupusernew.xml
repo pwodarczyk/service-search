@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgsignup" >
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+           android:paddingBottom="20dp"
+
+            android:layout_height="match_parent"
+           >
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/tvlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvsignuptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvlogo"
+            android:text="SIGN UP"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/mImageView"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/signuppicture"
+            android:layout_below="@+id/tvsignuptext"
+            android:layout_centerHorizontal="true"
+
+           />
+    </RelativeLayout>
+
+
+
+            <EditText
+                android:id="@+id/etsignupname"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:ems="10"
+                android:layout_below="@+id/relativeLayout1"
+                android:hint="Your name"
+                android:textColorHint="#fff"
+                android:textColor="#ffffff" />
+
+
+            <EditText
+                android:id="@+id/etsignupusername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etsignupname"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Username"
+                android:textColorHint="#fff"
+                android:textColor="#ffffff" >
+            </EditText>
+
+
+            <TextView
+                android:id="@+id/tvpassworduser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Password:-"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etsignuppassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etsignupusername"
+                android:singleLine="true"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:hint="Password"
+                android:textColorHint="#fff"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvemailuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvpassworduser"
+                android:layout_below="@+id/tvpassworduser"
+                android:layout_marginTop="25dp"
+                android:text="Email:-"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etsignupemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/etsignuppassword"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:ems="10"
+                android:hint="Email"
+                android:textColorHint="#fff"
+                android:textColor="#ffffff" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvphoneuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvemailuser"
+                android:layout_below="@+id/tvemailuser"
+                android:layout_marginTop="25dp"
+                android:text="Phone:-"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etsignupphone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etsignupemail"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:ems="10"
+                android:textColorHint="#fff"
+                android:hint="Phone number"
+                android:textColor="#ffffff" >
+            </EditText>
+
+            <TextView
+            android:id="@+id/tvaddressuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvphoneuser"
+            android:layout_below="@+id/tvphoneuser"
+            android:layout_marginTop="25dp"
+            android:text="Address:-"
+                android:visibility="gone"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvexperiancee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvphoneuser"
+                android:layout_below="@+id/tvrbselection"
+                android:layout_marginTop="25dp"
+                android:text="Experiance:-"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvrbselection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select type"
+                android:layout_below="@+id/etsignupaddress"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+               />
+
+
+            <TextView
+                android:id="@+id/tvcatogry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvphoneuser"
+                android:layout_below="@+id/tvexperiancee"
+                android:layout_marginTop="25dp"
+                android:text="Categoty:-"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/etsignupaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/etsignupphone"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:ems="10"
+                android:textColorHint="#fff"
+                android:hint="Address"
+                android:textColor="#ffffff" >
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/etexperiance"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/spinner_category"
+                android:singleLine="true"
+                android:ems="10"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#fff"
+                android:hint="Experiane"
+                android:textColor="#ffffff" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/et_epm_discription"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/etexperiance"
+                android:singleLine="true"
+                android:ems="10"
+
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#fff"
+                android:hint="Discription"
+                android:textColor="#ffffff" >
+            </EditText>
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:popupBackground="#ffffffff"
+                android:scrollbarStyle="insideOverlay"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rbselection"
+              />
+
+
+
+
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Get Image"
+                android:id="@+id/btngetImage"
+                android:visibility="gone"
+                android:layout_below="@+id/spinner_category"
+                android:layout_alignLeft="@+id/btnsignupformm"
+                />
+
+
+            <Button
+                android:id="@+id/btnsignupformm"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/et_epm_discription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customshape_btnsignup"
+                android:text="SignUp"
+
+                android:textColor="#ffffff" />
+
+
+            <RadioGroup
+                android:id="@+id/rbselection"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/etsignupaddress"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/rb_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:checked="true"
+                    android:paddingLeft="15dp"
+                    android:button="@drawable/button_radio"
+                    android:textColor="#fff"
+                    android:text="User" />
+
+                <RadioButton
+                    android:id="@+id/rb_employee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:button="@drawable/button_radio"
+                    android:text="Employee"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:textColor="#fff"
+                android:text="Already a member?"
+                android:id="@+id/Alreadyamember"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+               android:layout_below="@+id/btnsignupformm" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Login"
+                android:id="@+id/tvlogin"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/Alreadyamember" />
+
+
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_toRightOf="@+id/tvlogin"
+                android:id="@+id/tvloginerow"
+                android:textColor="#fff"
+                android:layout_marginLeft="10dp"
+               android:background="@drawable/loginarrow"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/Alreadyamember" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

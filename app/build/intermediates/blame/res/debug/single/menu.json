@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Development\\GIT\\service-search\\app\\build\\intermediates\\res\\merged\\debug\\menu\\actionbarmenu.xml",
+        "source": "C:\\Development\\GIT\\service-search\\app\\src\\main\\res\\menu\\actionbarmenu.xml"
+    },
+    {
+        "merged": "C:\\Development\\GIT\\service-search\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main_settings.xml",
+        "source": "C:\\Development\\GIT\\service-search\\app\\src\\main\\res\\menu\\main_settings.xml"
+    },
+    {
+        "merged": "C:\\Development\\GIT\\service-search\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Development\\GIT\\service-search\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Development\\GIT\\service-search\\app\\build\\intermediates\\res\\merged\\debug\\menu\\logout.xml",
+        "source": "C:\\Development\\GIT\\service-search\\app\\src\\main\\res\\menu\\logout.xml"
+    }
+]
